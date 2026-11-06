@@ -114,6 +114,19 @@
             gap: 1.5rem;
         }
 
+        .video-container {
+            text-align: center;
+        }
+
+        .video-container video {
+            width: 100%;
+            max-width: 600px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+            outline: none;
+            margin-top: 10px;
+        }
+
         @media (max-width: 768px) {
             .two-columns {
                 grid-template-columns: 1fr;
@@ -252,6 +265,18 @@
                         <li>El imperio se consolidó a través de alianzas estratégicas entre tres grandes ciudades: <strong>México-Tenochtitlán</strong>, <strong>Texcoco</strong> y <strong>Tlacopan</strong>.</li>
                     </ul>
                 </div>
+            </div>
+        </section>
+
+        <!-- Sección de Video -->
+        <section>
+            <h2>Multimedia: Presentación y Detalles</h2>
+            <div class="video-container">
+                <p>Haz clic en el reproductor para ver el video explicativo:</p>
+                <video controls preload="metadata">
+                    <source src="video.mp4" type="video/mp4">
+                    Tu navegador no soporta la reproducción de videos.
+                </video>
             </div>
         </section>
 
