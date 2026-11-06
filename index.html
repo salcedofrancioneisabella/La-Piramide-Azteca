@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Los Aztecas - Historia y Cultura</title>
+    
+    <!-- Ícono de la pestaña del sitio web -->
+    <link rel="icon" href="icono.png" type="image/png">
+
+    <style>
+        :root {
+            --primary-color: #be185d;
+            --secondary-color: #db2777;
+            --bg-color: #fff1f2;
+            --card-bg: #ffffff;
+            --text-color: #1e293b;
+            --header-bg: #881337;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.6;
+            position: relative;
+        }
+
+        header {
+            background-color: var(--header-bg);
+            color: #ffffff;
+            padding: 2.5rem 1rem;
+            text-align: center;
+            border-bottom: 5px solid var(--primary-color);
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+            letter-spacing: 1px;
+        }
+
+        header p {
+            margin-top: 10px;
+            color: #fbcfe8;
+            font-size: 1.1rem;
+        }
+
+        main {
+            max-width: 1000px;
+            margin: 2rem auto;
+            padding: 0 1.5rem;
+        }
+
+        .intro-box {
+            background-color: #ffe4e6;
+            border-left: 6px solid var(--primary-color);
+            padding: 1.5rem;
+            border-radius: 4px;
+            margin-bottom: 2rem;
+            font-size: 1.05rem;
+        }
+
+        .grid-stats {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+            margin-bottom: 2.5rem;
+        }
+
+        .stat-card {
+            background: var(--card-bg);
+            padding: 1.2rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            border-top: 3px solid var(--secondary-color);
+        }
+
+        .stat-card h3 {
+            margin: 0;
+            font-size: 0.9rem;
+            color: #64748b;
+            text-transform: uppercase;
+        }
+
+        .stat-card p {
+            margin: 0.5rem 0 0 0;
+            font-size: 1.3rem;
+            font-weight: bold;
+            color: var(--primary-color);
+        }
+
+        section {
+            background: var(--card-bg);
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+            margin-bottom: 2rem;
+        }
+
+        h2 {
+            color: var(--primary-color);
+            border-bottom: 2px solid #f1f5f9;
+            padding-bottom: 0.5rem;
+            margin-top: 0;
+        }
+
+        .two-columns {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1.5rem;
+        }
+
+        @media (max-width: 768px) {
+            .two-columns {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        ul {
+            padding-left: 1.2rem;
+        }
+
+        li {
+            margin-bottom: 0.5rem;
+        }
+
+        footer {
+            text-align: center;
+            padding: 1.5rem;
+            background-color: var(--header-bg);
+            color: #fbcfe8;
+            font-size: 0.95rem;
+            margin-top: 3rem;
+            border-top: 3px solid var(--secondary-color);
+        }
+
+        footer p {
+            margin: 0.3rem 0;
+        }
+
+        .footer-project {
+            font-weight: bold;
+            color: #ffffff;
+            font-size: 1.1rem;
+        }
+
+        /* --- Estilo del Portal Secreto en la Esquina --- */
+        .portal-corner {
+            position: fixed;
+            bottom: 10px;
+            right: 10px;
+            width: 90px;
+            height: 90px;
+            z-index: 9999;
+            opacity: 0;
+            transition: opacity 0.4s ease, transform 0.4s ease;
+            cursor: pointer;
+        }
+
+        .portal-corner:hover,
+        .portal-corner:active {
+            opacity: 1;
+            transform: scale(1.1);
+        }
+
+        .portal-corner img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Portal Secreto oculto en la esquina inferior derecha -->
+    <div class="portal-corner" title="¡Has encontrado el portal!">
+        <img src="portal.png" alt="Portal">
+    </div>
+
+    <header>
+        <h1>Los Aztecas / Mexicas</h1>
+        <p>Imperio, Tenochtitlán y Mitología Mesoamericana</p>
+    </header>
+
+    <main>
+        <div class="intro-box">
+            <p>Los aztecas (o mexicas) formaron parte del imperio más importante de Mesoamérica[cite: 14]. Descendientes de los pueblos nahuas, se asentaron en un islote del lago Texcoco siguiendo el consejo del dios Huitzilopochtli, fundando la imponente ciudad de Tenochtitlán[cite: 10, 14].</p>
+        </div>
+
+        <!-- Datos Clave -->
+        <div class="grid-stats">
+            <div class="stat-card">
+                <h3>Ubicación</h3>
+                <p>Cuenca de México</p>
+            </div>
+            <div class="stat-card">
+                <h3>Fundación</h3>
+                <p>Año 1325 d. C.[cite: 10]</p>
+            </div>
+            <div class="stat-card">
+                <h3>Caída del Imperio</h3>
+                <p>Año 1521 d. C.[cite: 14]</p>
+            </div>
+            <div class="stat-card">
+                <h3>Capital</h3>
+                <p>Tenochtitlán[cite: 10]</p>
+            </div>
+        </div>
+
+        <!-- Fundación y Origen -->
+        <section>
+            <h2>Origen y Fundación de Tenochtitlán</h2>
+            <div class="two-columns">
+                <div>
+                    <h3>El Mito Fundacional</h3>
+                    <ul>
+                        <li>Los mexicas partieron de Aztlán como un pueblo nómada en búsqueda de la tierra prometida[cite: 14].</li>
+                        <li>Huitzilopochtli (dios del Sol y de la guerra) les reveló que debían asentarse donde vieran a un águila devorando a una serpiente sobre un nopal[cite: 10].</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Ingeniería y Urbanismo</h3>
+                    <ul>
+                        <li>Construida en una isla rodeada de un complejo sistema de diques, calzadas y acueductos[cite: 10].</li>
+                        <li>Desarrollo de las <strong>chinampas</strong> (jardines flotantes creados con cañas, ramas y fango) para la agricultura intensiva[cite: 14].</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Organización Social -->
+        <section>
+            <h2>Organización Social y Política</h2>
+            <div class="two-columns">
+                <div>
+                    <h3>Pirámide Social</h3>
+                    <ul>
+                        <li><strong>Huey Tlatoani:</strong> Emperador o jefe supremo con poder político, militar y religioso[cite: 11, 13].</li>
+                        <li><strong>Pipiltin:</strong> Nobleza de clase alta (sacerdotes, jueces y jefes militares)[cite: 11].</li>
+                        <li><strong>Pochtecas:</strong> Comerciantes de renombre que también cumplían funciones de espías[cite: 11].</li>
+                        <li><strong>Macehualtin:</strong> Pueblo común (agricultores, artesanos y constructores)[cite: 11].</li>
+                        <li><strong>Tlatocotin / Esclavos:</strong> Prisioneros de guerra o personas cumpliendo condenas[cite: 11].</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>La Triple Alianza</h3>
+                    <ul>
+                        <li>El imperio se consolidó a través de alianzas estratégicas entre tres grandes ciudades: <strong>México-Tenochtitlán</strong>, <strong>Texcoco</strong> y <strong>Tlacopan</strong>[cite: 11].</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Mitología y Emperadores -->
+        <section>
+            <h2>Mitología y Emperadores Destacados</h2>
+            <ul>
+                <li><strong>Dioses Principales:</strong> Veneraban a deidades como <em>Huitzilopochtli</em> (Sol y guerra), <em>Quetzalcóatl</em> (la serpiente emplumada), <em>Tláloc</em> (lluvia) y <em>Tezcatlipoca</em>[cite: 12].</li>
+                <li><strong>El mito de los Cinco Soles y la Piedra del Sol:</strong> Conocido popularmente como el calendario azteca, representaba la concepción del tiempo y el cosmos[cite: 12, 14].</li>
+                <li><strong>Emperadores Clave:</strong> Desde el primer emperador <em>Acamapichtli</em> pasando por la expansión con <em>Itzcóatl</em> y <em>Ahuízotl</em>, hasta el fin del imperio con <em>Moctezuma Xocoyotzin</em> y el último gobernante <em>Cuauhtémoc</em>[cite: 13].</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p class="footer-project">Proyecto Micro-Maquetas</p>
+        <p>Salcedo Francione Isabella</p>
+        <p style="margin-top: 10px;"><a href="https://drive.google.com/drive/folders/1Wp8HRbZm923gLzm_UdHUUlI6qoIdiSFf?usp=sharing" target="_blank" style="color: #fbcfe8; text-decoration: underline;">Revisar el Google Drive con información extra</a></p>
+    </footer>
+
+</body>
+</html>
